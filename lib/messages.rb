@@ -20,9 +20,9 @@ class Messages
     "Quittin'?!! Ye be nay a captain, ye be a scurvy dog!"
   end
 
-  # def placement
-  #   "I be havin' laid ou' me ships on th' grid.\nYe now need t' layout yer two ships.\nTh' first be two units long an' th' second be three units long.\nTh' grid has A1 at th' top port an' D4 at th' bottom starboard.\nYa scallywag!\nEnter th' squares fer th' two-unit ship:"
-  # end
+  def placement
+    "I be havin' laid ou' me ships on th' grid.\nYe now need t' layout yer two ships.\nTh' first be two units long an' th' second be three units long.\nTh' grid has A1 at th' top port an' D4 at th' bottom starboard.\nYa scallywag!\nEnter th' squares fer th' two-unit ship:"
+  end
 end
 
 #http://www.battleshiponline.org/how-to-play-battleship.php

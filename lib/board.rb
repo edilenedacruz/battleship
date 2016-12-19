@@ -5,6 +5,10 @@ class Board
     @size = size
   end
 
+  def wrapper
+    [("=======" * size + "=")]
+  end
+
   def numbers_row
     numbers_row = ["."]
     size.times { |num| numbers_row << "#{num + 1}".center(3) }
@@ -19,18 +23,10 @@ class Board
     rows
   end
 
-  def header
-    header = [("=======" * size + "=")]
-  end
-
   def board_game
     grid = letters_rows
     grid.unshift(numbers_row)
-    grid.unshift(header)
-    grid.push(header)
-    binding.pry
+    grid.unshift(wrapper)
+    grid.push(wrapper)
   end
 end
-
-b = Board.new(4)
-b.board_game
