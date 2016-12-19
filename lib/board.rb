@@ -6,8 +6,8 @@ class Board
   end
 
   def numbers_row
-    numbers_row = [". "]
-    size.times { |num| numbers_row << (num + 1).to_s }
+    numbers_row = ["."]
+    size.times { |num| numbers_row << "#{num + 1}".center(3) }
     numbers_row
   end
 
@@ -20,14 +20,15 @@ class Board
   end
 
   def header
-    header = ["====" * size]
+    header = [("=======" * size + "=")]
   end
 
   def board_game
-    puts grid = letters_rows
-    puts grid.unshift(numbers_row)
-    puts grid.unshift(header)
-    puts grid.push(header)
+    grid = letters_rows
+    grid.unshift(numbers_row)
+    grid.unshift(header)
+    grid.push(header)
+    binding.pry
   end
 end
 
