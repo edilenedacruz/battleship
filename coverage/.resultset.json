@@ -1,0 +1,39 @@
+{
+  "Unit Tests": {
+    "coverage": {
+      "/Users/edilene/1611/projects/battleship/lib/messages.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1482183223
+  }
+}
