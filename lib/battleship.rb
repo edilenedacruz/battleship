@@ -1,4 +1,5 @@
 require_relative 'messages'
+require 'pry'
 
 class BattleShip
   attr_reader :messages
@@ -16,12 +17,12 @@ class BattleShip
     player_input = gets.chomp.downcase
       if player_input.start_with?("p")
         puts messages.play_message
-        start_game #create method
+        start_game
       elsif player_input.start_with?("i")
         puts messages.instructions
         game_sequence
       elsif player_input.start_with?("q")
-        messages.quit
+        puts messages.quit
         exit
       else
         puts "Do ye want t' keel haul th' plank?! This be nay a valid choice, please try again:"
@@ -30,10 +31,15 @@ class BattleShip
   end
 
   def start_game
-    puts "Starting game here"
+    puts messages.placement_restrictions
+    #generate computer board
+    puts messages.placement_first_ship
+    #input for 2unit ship then fetches 2 unit ship
+    first_ship_request = gets.chomp.upcase
+    #now split that into coordinates into the player board
   end
 end
 
 # if __FILE__ == $0
 #
-# BattleShip.new.welcome
+BattleShip.new.welcome

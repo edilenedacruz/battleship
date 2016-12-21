@@ -34,8 +34,12 @@ class MessagesTest < Minitest::Test
     assert_equal "Quittin'?!! Ye be nay a captain, ye be a scurvy dog!", m.quit
   end
 
-  def test_it_prints_placement_request
+  def test_it_prints_placement_request_for_first_ship
     expected = "I be havin' laid ou' me ships on th' grid.\nYe now need t' layout yer two ships.\nTh' first be two units long an' th' second be three units long.\nTh' grid has A1 at th' top port an' D4 at th' bottom starboard.\nYa scallywag!\nEnter th' squares fer th' two-unit ship:"
     assert expected, m.placement
   end
+
+  # def test_placement_restrictions
+  #
+  # end
 end

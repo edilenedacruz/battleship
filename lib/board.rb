@@ -1,7 +1,7 @@
 require 'pry'
 class Board
   attr_reader :size
-  def initialize(size = 4)
+  def initialize(size)
     @size = size
   end
 
@@ -28,5 +28,8 @@ class Board
     grid.unshift(numbers_row)
     grid.unshift(wrapper)
     grid.push(wrapper)
+    binding.pry
   end
 end
+
+p Board.new(4).board_game

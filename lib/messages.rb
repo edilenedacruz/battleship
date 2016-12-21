@@ -20,7 +20,11 @@ class Messages
     "Quittin'?!! Ye be nay a captain, ye be a scurvy dog!"
   end
 
-  def placement
+  def placement_restrictions
+    "Here be some rules fer yer ships:\nShips cannot wrap around th' board\nShip canna overlap\nShips can be laid either port t' starboard or top t' bottom\nCoordinates must correspond t' th' first an' last units o' th' ship. (IE: Ye canna place a two unit ship at 'A1 A3')\n\----------------------------------"
+  end
+
+  def placement_first_ship
     "I be havin' laid ou' me ships on th' grid.\nYe now need t' layout yer two ships.\nTh' first be two units long an' th' second be three units long.\nTh' grid has A1 at th' top port an' D4 at th' bottom starboard.\nYa scallywag!\nEnter th' squares fer th' two-unit ship:"
   end
 end

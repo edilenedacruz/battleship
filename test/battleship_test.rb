@@ -15,4 +15,8 @@ class BattleShipTest < Minitest::Test
     expected = "Ahoy Matey!\nYou be havin' crossed dangerous waters an' we must swashbuckle!\nType (p)lay if ye be ready t' battle, (i)nstructions if ye must need lessons on how t' run yer ship, or (q)uit if ye be too lily livered t' battle."
     assert expected, bs.welcome
   end
+
+  # def test_it_starts_game
+  #
+  # end
 end
